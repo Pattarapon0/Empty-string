@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embed Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="status_box">
+    Status
+    <div class="show_box">
+      <div class="green_status" id="s_box">
+        ไม่ท่วม
+      </div>
+    </div>
+  </div>
+  <div class="sensors">
+    <div class="sensor_box">
+      Water sensor
+      <div class="show_number" id="water_level">
+        2.28
+      </div>
+    </div>
+    <div class="sensor_box">
+      Water height
+      <div class="show_number" id="ultrasonic">
+        76.68
+      </div>
+      <div class="unit">
+        cm
+      </div>
+    </div>
+    <div class="sensor_box">
+      Water flow
+      <div class="show_number" id="water_flow">
+        0.3
+      </div>
+      <div class="unit">
+        ml/min
+      </div>
+    </div>
+    <div class="clock_box">
+      <!-- <div style="align-self: self-start"> -->
+      <div>
+        Angle
+      </div>
+      <!-- <div class="show_number" id="angle">
+        0.3
+      </div>
+      <div class="unit">
+        degree
+      </div> -->
+      <canvas id="canvas" class="clock"></canvas>
+      <div class="degree" id="angle">
+        0<sup>o</sup>
+      </div>
+    </div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
